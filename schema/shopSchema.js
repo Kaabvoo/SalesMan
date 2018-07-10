@@ -1,13 +1,11 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const database = 'TestUsers'
+const database = 'shopLocation'
 
 const schema = new Schema({
-    name: String,
-    nick: String,
-    phone: String,
-    email: String,
-    date: String
+    nameShop: String,
+    location: String,
+    schedule: String,
 })
 
 module.exports = mongoose.model(database, schema);
