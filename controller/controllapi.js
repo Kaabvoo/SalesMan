@@ -23,5 +23,12 @@ const control ={
             res.status(200).send(re)
         })
     },
+
+    updateUser(req, res){
+        var q = model.findById(req.query._id, (err, re)=>{
+            console.log(req.body)
+            res.status(200).send(re)
+        })
+    }
 }
 module.exports = control;

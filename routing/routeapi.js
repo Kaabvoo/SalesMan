@@ -6,4 +6,6 @@ urls.route('/createUser')
     .post(controllapi.cUser)
 urls.route('/searchUser')
     .get(controllapi.searchUser)
+urls.route('/updateUser')
+    .patch(controllapi.updateUser)
 module.exports = urls;
